@@ -32,10 +32,23 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to react-django-boiler</h2>
         </div>
-        <p className="App-intro">
-          Hi {this.state.name}, to see how Django interacts with React go to views.py to change your name.
-          To see how react interacts with Django, go to App.js to see the setup for this page.
-        </p>
+        <div className="App-intro">
+            <h3>
+                Hi {this.state.name}!
+            </h3>
+            <p className="App-info">
+                <strong>To see how Django interacts with React:</strong>
+                <br/>
+                Go to "react-django-boiler/backend/app/views.py" and
+                change the value for "name" in the test view's JsonResponse
+                <br/>
+                <br/>
+                <strong>To see how React interacts with Django:</strong>
+                <br/>
+                Go to "react-django-boiler/frontend/src/App.js" to see
+                the setup for this page
+            </p>
+        </div>
       </div>
     );
   }
